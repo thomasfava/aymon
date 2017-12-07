@@ -1,0 +1,64 @@
+.feed {
+  @extend %reset-list;
+  display: flex;
+  margin: 0 -1.5rem;
+  padding-top: 3rem;
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+    margin: 0 1.5rem;
+    border: 1px solid color-grays('light');
+    background: color-grays('white');
+    box-shadow: 1px 6px 8px -4px rgba(0,0,0,0.1);
+    transition: border .2s ease-in-out;
+    text-decoration: none;
+
+    &:after {
+      transition: opacity .2s ease-in-out;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: 1px 6px 8px -4px rgba(0,0,0,0.2);
+      opacity: 0;
+    }
+
+    &:hover {
+      border-color: $color-base-link-hover;
+      &:after {
+        opacity: 1;
+      }
+    }
+
+    &--invert {
+      background: #231f20;
+    }
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__description {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid color-grays('light');
+    margin-bottom: 0;
+    padding: 6px 6px 3px;
+    font-style: italic;
+    font-family: $secondary-font;
+    font-size: $h6-font-size;
+    text-align: center;
+
+    .feed__item--invert & {
+      color: color-grays('light');
+    }
+  }
+}

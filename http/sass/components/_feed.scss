@@ -10,9 +10,9 @@
     flex-direction: column;
     flex-basis: 33%;
     margin: 0 1.5rem;
-    border: 1px solid color-grays('light');
-    background: color-grays('white');
-    box-shadow: 1px 6px 8px -4px rgba(0,0,0,0.1);
+    border: 1px solid color-grays('gray');
+    background: color('secondary');
+    box-shadow: 1px 6px 18px -4px rgba(255, 255, 255, 0.2);
     transition: border .2s ease-in-out;
     text-decoration: none;
 
@@ -24,19 +24,19 @@
       right: 0;
       bottom: 0;
       left: 0;
-      box-shadow: 1px 6px 8px -4px rgba(0,0,0,0.2);
+      box-shadow: 1px 6px 18px -4px rgba(255, 255, 255, 0.25);
       opacity: 0;
     }
 
     &:hover {
-      border-color: $color-base-link-hover;
+      //border-color: color-grays('light');
       &:after {
         opacity: 1;
       }
     }
 
     &--invert {
-      background: #231f20;
+      background: color-grays('white');
     }
   }
 
@@ -49,7 +49,7 @@
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid color-grays('light');
+    border-top: 1px solid color-grays('gray');
     margin-bottom: 0;
     padding: 6px 6px 3px;
     font-style: italic;
@@ -58,7 +58,7 @@
     text-align: center;
 
     .feed__item--invert & {
-      color: color-grays('light');
+      color: color('secondary');
     }
   }
 }

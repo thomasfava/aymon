@@ -24,11 +24,12 @@ html {
 
 body {
   @extend %reset;
-
   font-family: $primary-font;
   font-size: $base-font-size;
   line-height: $base-line-height;
   color: $color-base-text;
+  font-weight: 300;
+  letter-spacing: 0.01em;
 }
 
 // SELECTED TEXT
@@ -46,8 +47,11 @@ h4,
 h5,
 h6 {
   line-height: $base-line-height;
-  margin: 1.8rem 0 1.2rem;
+  margin: 2.2rem 0 1.2rem;
   font-family: $secondary-font;
+  color: color-grays('lighter');
+  letter-spacing: 0.025em;
+  font-weight: 400;
 }
 
 h1 {
@@ -55,10 +59,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   column-span: all;
-  &.rbb {
-    text-transform: none;
-    font-size: 2.8rem;
-  }
+  color: color-grays('white');
 }
 
 h2 {
@@ -83,7 +84,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 1rem;
+  margin: 0 0 1.2rem;
   font-weight: 300;
 }
 
@@ -125,6 +126,9 @@ ul,
 ol {
   padding-left: 2rem;
   margin: 0;
+  li {
+    font-weight: 300;
+  }
 }
 
 span {

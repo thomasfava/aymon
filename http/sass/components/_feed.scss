@@ -1,6 +1,7 @@
 .feed {
   @extend %reset-list;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -1.5rem;
   padding-top: 3rem;
 
@@ -8,8 +9,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-basis: 33%;
-    margin: 0 1.5rem;
+    flex-basis: 26%;
+    flex-grow: 1;
+    margin: 1.5rem;
     border: 1px solid color-grays('gray');
     background: color('secondary');
     box-shadow: 1px 6px 18px -4px rgba(255, 255, 255, 0.2);

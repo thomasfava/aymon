@@ -38,7 +38,7 @@
     }
 
     &--invert {
-      background: color-grays('white');
+      background: color-grays('lightest');
     }
   }
 
@@ -58,6 +58,7 @@
     font-family: $secondary-font;
     font-size: $h6-font-size;
     text-align: center;
+    color: color-grays('lighter');
 
     .feed__item--invert & {
       color: color('secondary');

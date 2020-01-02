@@ -14,8 +14,8 @@
 
   &:hover {
     background-color: transparent;
-    color: color-grays('white');
+    color: color-grays('darker');
     cursor: pointer;
-    border-color: color-grays('light');
+    border-color: color-grays('gray');
   }
 }

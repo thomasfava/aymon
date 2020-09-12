@@ -90,9 +90,12 @@ p {
 }
 
 a {
-  transition: color .2s ease-in-out;
-  text-decoration-skip: ink;
+  transition: color 0.2s ease-in-out;
   color: $color-base-link;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-underline-position: under;
+  text-decoration-color: color("primary");
 
   &:hover {
     color: $color-base-link-hover;

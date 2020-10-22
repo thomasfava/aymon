@@ -1,0 +1,20 @@
+.button {
+  transition: all .3s ease-in-out;
+  display: inline-block;
+  background-color: color('primary');
+  color: color-grays('white');
+  padding: 0.1em 0.7em 0.05em;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid color('primary');
+  font-size: $h5-font-size;
+  margin-top: 1rem;
+  box-shadow: 1px 6px 8px -4px rgba(0,0,0,0.15);
+  text-shadow: none;
+
+  &:hover {
+    background-color: transparent;
+    color: color('primary');
+    cursor: pointer;
+  }
+}

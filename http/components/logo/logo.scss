@@ -1,0 +1,14 @@
+@import "sass-essentials";
+
+.logo {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 360px;
+
+  &__image {
+    max-width: 100%;
+    height: auto
+  }
+}
+

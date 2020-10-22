@@ -1,0 +1,11 @@
+.highlight-link {
+  display: inline-block;
+  padding: 0.6rem 0 0;
+  line-height: 1.2;
+  font-style: italic;
+  font-size: $h2-font-size;
+  font-family: $secondary-font;
+  text-decoration: none;
+  border-bottom: thin solid color('primary');
+  margin: 1.8rem auto;
+}

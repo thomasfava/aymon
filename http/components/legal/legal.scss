@@ -1,0 +1,18 @@
+@import "sass-essentials";
+
+.copyright {
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: $h6-font-size;
+  margin-bottom: 0;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  @include tablet {
+    justify-content: flex-start;
+    padding-left: span(5 of 12 wide);
+    text-align: left;
+  }
+}

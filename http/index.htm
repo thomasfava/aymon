@@ -23,7 +23,8 @@
     <meta property="og:image:width" content="2400" />
     <meta property="og:image:height" content="1260" />
     <meta property="og:image:alt" content="Aymon - Bier om te delen" />
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="components/global-css/dist/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=qA3BMjQbRY">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=qA3BMjQbRY">
@@ -100,9 +101,6 @@
                     <strong>Belgisch bier</strong> van hoge gisting met hergisting in de fles en smaakevolutie.
                 </p>
             </div>
-            <p class="intro__cta intro__cta--first">
-                <a href="mailto:info@aymon.be?subject=Contact from aymon.be" class="button">Contacteer ons</a>
-            </p>
         </article>
 
         <div class="page__logo">
@@ -121,8 +119,8 @@
                     Het meest recente brouwjaar van <strong class="visually-hidden">Ros Beiaard bier</strong> Aymon is 2020.
                 </p>
             </div>
-            <p class="intro__cta intro__cta--second">
-                <a href="mailto:info@aymon.be?subject=Contact from aymon.be" class="button">Contacteer ons</a>
+            <p class="intro__cta">
+                <a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#105;&#110;&#102;&#111;&#064;&#097;&#121;&#109;&#111;&#110;&#046;&#098;&#101;?subject=Contact from aymon.be" class="highlight-link">&#105;&#110;&#102;&#111;&#064;&#097;&#121;&#109;&#111;&#110;&#046;&#098;&#101;</a>
             </p>
         </article>
 
@@ -193,18 +191,22 @@
         <article class="page__article sale-points">
             <h2>Aymon op de kaart</h2>
             <ul class="sales-list">
-                <li class="sales-list__item"><a href="http://tpeirt.be/" target="_blank" rel=“noopener noreferrer" title="Café Taverne ’t Peirt">Café Taverne ’t Peirt</a> <em>Kasteelstraat 1, Dendermonde</em></li>
+                <li class="sales-list__item"><a href="https://tpeirt.be/" target="_blank" rel=“noopener noreferrer" title="Café Taverne ’t Peirt">Café Taverne ’t Peirt</a> <em>Kasteelstraat 1, Dendermonde</em></li>
                 <li class="sales-list__item"><a href="http://bar-d-o.be/" target="_blank" rel=“noopener noreferrer" title="Bar d’O">Bar d’O</a> <em>Grote Markt 30, Dendermonde</em></li>
-                <li class="sales-list__item"><a href="http://couretjardin.be/" target="_blank" rel=“noopener noreferrer" title="Cour & Jardin">Cour & Jardin</a> <em>Kerkstraat 24, Dendermonde</em></li>
                 <li class="sales-list__item">In De Poepekas <em>Dijkstraat 120, Dendermonde</em></li>
-                <li class="sales-list__item">Café Polderzicht <em>Bijlokestraat 20, Dendermonde</em></li>
+                <li class="sales-list__item"><a href="http://couretjardin.be/" target="_blank" rel=“noopener noreferrer" title="Cour & Jardin">Cour & Jardin</a> <em>Kerkstraat 24, Dendermonde</em></li>
                 <li class="sales-list__item">Café Akademie <em>Oude Vest 99, Dendermonde</em></li>
+                <li class="sales-list__item">Café Polderzicht <em>Bijlokestraat 20, Dendermonde</em></li>
+            </ul>
+            <h2>Foodpairing</h2>
+            <ul class="sales-list">
+                <li class="sales-list__item"><a href="http://desnuiver.be/" target="_blank" rel=“noopener noreferrer" title="Restaurant De Snuiver">Restaurant De Snuiver</a> <em>Molenveldstraat 27, Lebbeke</em></li>
             </ul>
             <h2>Verkooppunten</h2>
             <ul class="sales-list">
                 <li class="sales-list__item"><a href="https://delhaize.be/nl-be/storedetails?storeName=10046217" target="_blank" rel=“noopener noreferrer" title="AD Delhaize Oude Vest">AD Delhaize Oude Vest</a> <em>Leopold II Laan 69, Dendermonde</em></li>
                 <li class="sales-list__item"><a href="https://keurslagerbatselier.be" target="_blank" rel=“noopener noreferrer" title="Keurslager Batselier">Keurslager Batselier</a> <em>Hemelstraat 38, Dendermonde</em></li>
-                <li class="sales-list__item">Slagerij Batselier <em>Grootzand 152, Grembergen</em></li>
+                <li class="sales-list__item"><a href="https://slagerijbatseliergrembergen.be" target="_blank" rel=“noopener noreferrer" title="Slagerij Batselier Grembergen">Slagerij Batselier</a> <em>Grootzand 152, Grembergen</em></li>
                 <li class="sales-list__item">De Blauwe Peper <em>Brusselsestraat 122, Dendermonde</em></li>
                 <li class="sales-list__item"><a href="http://drankenmaes.be/" target="_blank" rel=“noopener noreferrer" title="Dranken Maes">Dranken Maes</a> <em>Industrieterrein Hoogveld 29, Dendermonde</em></li>
                 <li class="sales-list__item"><a href="https://dranken-vercruyssen.be/" target="_blank" rel=“noopener noreferrer" title="Dranken Vercruyssen">Dranken Vercruyssen</a> <em>Pastoor Christiaensstraat 27-29 C, Berlare</em></li>
@@ -230,12 +232,12 @@
             <li class="social-links__item"><a href="https://twitter.com/rosbeiaardbier" class="social-links__link social-links__link--twitter" target="_blank" rel=“noopener noreferrer" title="Twitter"><span class="social-links__text">Twitter</span></a></li>
             <li class="social-links__item"><a href="https://linkedin.com/company/rosbeiaardbier" class="social-links__link social-links__link--linkedin" target="_blank" rel=“noopener noreferrer" title="LinkedIn"><span class="social-links__text">LinkedIn</span></a></li>
         </ul>
-
     </aside>
+
     <footer class="page__footer">
+        <p class="legal">Aymon is een geregistreerde merknaam. Bier drink je met verstand.</p>
         <p class="copyright">&copy;&nbsp;2020 <a href="https://rosbeiaardbierproevers.be/" class="copyright__link" target="_blank" rel=“noopener noreferrer" title="Ros Beiaard Bierproevers">Ros Beiaard Bierproevers Dendermonde</a></p>
     </footer>
 
-  <!--<script src="js/scripts.js"></script>-->
 </body>
 </html>

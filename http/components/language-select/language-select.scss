@@ -21,7 +21,7 @@
 
     &[aria-current*="page"] {
       text-decoration-color: transparent;
-      background-color: color("primary");
+      background-color: color-complementary("primary");
       color: color-complementary("secondary");
       margin-inline: 0.4rem;
     }

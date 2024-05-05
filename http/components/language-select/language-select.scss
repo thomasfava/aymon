@@ -1,0 +1,29 @@
+@import "sass-essentials";
+
+.language-select {
+
+  &__items {
+    @include reset-list();
+
+    display: flex;
+    justify-content: end;
+    gap: 0.4rem;
+  }
+
+  &__link {
+    display: block;
+    text-transform: uppercase;
+    padding-inline: 0.4rem;
+    font-size: $h5-font-size;
+    font-weight: 400;
+    border-radius: 0.2rem;
+    line-height: 1.2;
+
+    &[aria-current*="page"] {
+      text-decoration-color: transparent;
+      background-color: color("primary");
+      color: color-complementary("secondary");
+      margin-inline: 0.4rem;
+    }
+  }
+}
